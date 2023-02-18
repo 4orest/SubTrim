@@ -19,9 +19,8 @@ public static class SubTrim
         {
             return source;
         }
-        
-        return source.Substring(0, index) + 
-               source.Substring(index + substr.Length, source.Length - (index + substr.Length));        
+
+        return source.Remove(index, substr.Length);
     }
 
     public static string TrimStart(this string source, string substr)
@@ -42,9 +41,8 @@ public static class SubTrim
         {
             return source;
         }
-        
-        return source.Substring(0, index) + 
-               source.Substring(index + substr.Length, source.Length - (index + substr.Length));
+
+        return source.Remove(index, substr.Length);
     }
 
     public static string Trim(this string source, string substr)
