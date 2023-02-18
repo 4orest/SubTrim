@@ -1,0 +1,6 @@
+SubTrim/bin/
+SubTrim/obj/
+SubTrim.Tests/bin/
+SubTrim.Tests/obj/
+Sandbox/
+.vscode/
